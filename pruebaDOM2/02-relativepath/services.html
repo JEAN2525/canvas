@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header1">
+        <nav>
+            <ol>
+                <li><a href="services.html" target="blank">services</a><ol><li>amormio</li></ol></li>|
+                    
+                <li><a href="contactos.html"target="blank">contact</a></li>|
+                <li><a href="about.html"target="blank">about</a></li>|
+                <li><a href="../index.html"target="blank">home</a></li>|
+            </ol>
+        </nav>
+    </header>
+            <h1 id="servicio"></h1>
+            <script>
+                var servicio = document.getElementById("servicio");
+                var usuarios = prompt("que servicio deseas? ");
+                
+
+                //Ciclo//
+
+                while(usuarios != "bendicion")
+                {
+                    var usuarios = prompt("no encontramos ese servicio, que servicio deseas? ");
+                }
+
+                //Condicion//
+                
+                if(usuarios != "bendicion")
+                {
+                    
+                    servicio.innerHTML = "tu servicio no existe";
+                }
+
+                else
+                {
+                    servicio.innerHTML = "tu servicio es " + usuarios;
+                }
+
+
+            </script>
+        
+   
+    <h1>home</h1>
+</body>
+</html>

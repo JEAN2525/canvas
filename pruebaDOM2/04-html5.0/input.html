@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <form action="" name="pruebas_input" method="POST">
+            <label for="color">elije Color</label><br>
+            <input type="color" placeholder="ingrese su color favorito" name="" id="color"  oninput="hex.value=this.value" required><br><br>
+            <label for="fecha_nacimiento">tu fecha de nacimiento</label><br>
+            <input type="date" placeholder="ingrese fecha nacimiento" id="fecha_nacimiento"  oninput="fecha.value=this.value" required><br>
+            <label for="telefono">telefono:</label><br>
+            <input type="tel" id="telefono" placeholder="ingrese telefono" oninput="visual_tel.value=this.value" required><br>
+            <label for="coreo">coreo</label><br>
+            <input type="email" placeholder="ingrese correo" oninput="emails.value=this.value"><br>
+            <label for="experiencia">ingrese sus años de experiencia</label><br>
+            <input type="number" name="" placeholder="ingrese un año entre 1 a 100 años" id="experiencia" min="1" max="50" oninput="a_experiencia.value=this.value">
+            <!-- muestra -->
+            <h1>Panel de control</h1>
+            <h3>fecha de nacimiento es:</h3>
+            <output id="fecha"></output>
+            <h3>color: </h3>
+            <output id="hex"></output>
+            <h3>Telefono:</h3>
+            <output id="visual_tel"></output>
+            <h3>correo:</h3>
+            <output id="emails"></output>
+            <h3>años de experiencia</h3>               
+            <output id="a_experiencia"></output> <br><br>
+
+            <input type="submit" value="submit">
+        </form>
+
+
+        </legend>
+    </fieldset>
+    <script>
+         
+    </script>
+</body>
+</html>

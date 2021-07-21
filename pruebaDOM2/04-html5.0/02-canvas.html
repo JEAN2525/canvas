@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #square,#rectangle{
+            border: 1ps solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>square</h2>
+    <canvas id="square"></canvas>
+    <h2>rectangulo</h2>
+    <canvas id="rectangle"></canvas>
+    <h2>triangulo</h2>
+    <canvas id="triangle"></canvas>
+    <h2>circulo</h2>
+    <canvas id="circle"></canvas>
+    <h2>heart</h2>
+    <canvas id="heart"></canvas>
+    <h2>text</h2>
+    <canvas id="text"></canvas>
+    <script>
+        /* square */
+        var square = document.getElementById("square");
+        var lienzo = square.getContext("2d");
+        
+
+        lienzo.fillStyle = "#00CDCD";
+        lienzo.fillRect(0,5,30, 30);
+        
+
+        /* rectangle */
+
+        var rectangle = document.getElementById("rectangle");
+        var lienzo = rectangle.getContext("2d");
+
+        lienzo.fillStyle = "#002929";
+        lienzo.fillRect(0,5,60, 30);
+        lienzo.filter = "blur(0px)";
+        lienzo.fillText('Hello world', 50, 100);
+
+
+        /* triangle */
+
+        var triangle = document.getElementById("triangle");
+        var lienzo = triangle.getContext("2d");
+
+        lienzo.fillStyle = "#005252";
+
+        dibujo("red",150,40,30,100);
+        dibujo("red",150,40,270,100);
+        dibujo("red",30,100,270,100);
+
+        
+        function dibujo(color,xinicial,yinicial,xfinal,yfinal)
+        {
+
+    lienzo.beginPath();
+    lienzo.strokeStyle = color;
+    lienzo.moveTo(xinicial,yinicial);
+    lienzo.lineTo(xfinal,yfinal);
+    lienzo.stroke();
+    lienzo.closePath;
+}
+
+lienzo.direction = "ltr" || "rtl" || "inherit";
+
+        
+/* CIRCLE */
+
+var circle = document.getElementById('circle');
+var lienzo = circle.getContext('2d');
+
+
+lienzo.beginPath();
+lienzo.arc(50/* eje x */, 50/* eje Y */, 49/* radius-tamaño */, 0/* starangle */, 2 * Math.PI/* donde termina el angulo */, );
+lienzo.stroke();
+/* corazon */
+
+var heart = document.getElementById('heart');
+var lienzo = heart.getContext('2d');
+
+
+
+
+
+lienzo.beginPath();
+strokeStyle = "purple";
+lienzo.moveTo(70,60);
+lienzo.arcTo(120,120,170,60,99);
+lienzo.stroke();
+
+
+/* lienzo.arcTo(x1, y1, x2, y2, radius); */
+
+
+
+lienzo.stroke();
+lienzo.beginPath();
+lienzo.filter = 'contrast(10%)';
+;
+
+lienzo.font = '40px serif';
+lienzo.fillText("hola mundo",0,130,);
+
+lienzo.stroke();
+
+
+
+
+    </script>
+</body>
+</html>
+
